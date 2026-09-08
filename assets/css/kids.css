@@ -376,3 +376,49 @@ ul.check li::after{content:"";position:absolute;left:6px;top:9px;width:6px;heigh
   html{scroll-behavior:auto}
   .hero-inner>*{animation:none;opacity:1;transform:none}
 }
+
+/* ---------- 2컵 인포그래픽 (2026-09-08, 8766 시안에서 이식) ---------- */
+/* 2컵 인포그래픽 — 사이트의 고운돋움·하늘/민트/노랑을 잇는 평면 도식.
+   그림은 장식, 수치와 설명은 확대·스크린리더를 위한 HTML 텍스트. */
+.infog{min-width:0;padding:28px 22px 20px;background:var(--canvas);border-radius:24px}
+.infog .infog-heading{font-family:var(--f-display);font-size:25px;font-weight:400;line-height:1.45;
+  letter-spacing:-.025em;text-align:center;color:var(--navy)}
+.infog-flow{display:grid;grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr) 16px minmax(0,1fr);
+  align-items:start;max-width:480px;margin:24px auto 0;gap:2px}
+.infog-step{min-width:0;text-align:center}
+.infog-art{position:relative;width:100%;aspect-ratio:136/128}
+.infog-art svg{display:block;width:100%;height:auto}
+.infog-calendar-number{position:absolute;left:48.2%;top:59%;transform:translate(-50%,-50%);
+  font-size:clamp(22px,2.1vw,30px);font-weight:800;line-height:1;color:var(--navy);letter-spacing:-.04em}
+.infog-operator{align-self:start;padding-top:43px;color:var(--ink-3);text-align:center;font-size:20px;font-weight:400}
+.infog .infog-step-label{margin-top:9px;font-size:16px;line-height:1.5;color:var(--navy);white-space:nowrap}
+.infog-step-label strong{font-size:20px;font-weight:700}
+.infog .infog-step-note{margin-top:4px;font-size:12px;line-height:1.5;color:var(--ink-2);letter-spacing:-.03em}
+.infog-summary{display:flex;align-items:center;justify-content:center;gap:12px;max-width:360px;
+  margin:23px auto 0;padding:14px 12px;border-top:1px solid var(--sky-2)}
+.infog-summary svg{width:26px;height:30px;flex:none}
+.infog .infog-summary p{font-size:14px;line-height:1.6;color:var(--ink-2)}
+.infog-summary strong{font-weight:600;color:var(--navy)}
+.infog .src{margin-top:5px;text-align:center;font-size:11px;line-height:1.6;color:var(--ink-3)}
+@media(max-width:820px){
+  .infog{padding:28px 24px 22px}
+  .infog-calendar-number{font-size:32px}
+  .infog-operator{padding-top:50px}
+}
+@media(max-width:420px){
+  .infog{padding:24px 15px 18px;border-radius:20px}
+  .infog .infog-heading{font-size:23px}
+  .infog-flow{grid-template-columns:minmax(0,1fr) 12px minmax(0,1fr) 12px minmax(0,1fr);margin-top:22px;gap:1px}
+  .infog-calendar-number{font-size:24px}
+  .infog-operator{padding-top:30px;font-size:17px}
+  .infog .infog-step-label{font-size:13px;margin-top:8px}
+  .infog-step-label strong{font-size:17px}
+  .infog-summary{margin-top:20px;padding:13px 0}
+}
+@media(max-width:359px){
+  .infog .infog-heading{font-size:21px}
+  .infog-calendar-number{font-size:20px}
+  .infog-operator{padding-top:23px}
+  .infog .infog-step-label{font-size:12px}
+  .infog-step-label strong{font-size:15px}
+}

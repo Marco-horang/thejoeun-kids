@@ -284,11 +284,75 @@ HOME = f'''
       <p class="lead mt-16">가정에서든 원에서든 손 설거지로는 세제를 완전히 씻어내기 어렵습니다. 아이는 그 식판으로 하루 세 번 밥을 먹습니다.</p>
       <p class="mt-16">THE 좋은식판은 세제에 기대지 않습니다. 80℃ 고온수, 초음파, 고압 헹굼, 120℃ 건조가 세제의 자리를 대신합니다.</p>
     </div>
-    <div class="stat-card">
-      <div class="num">2컵<small>한 해 동안</small></div>
-      <p class="desc">아이 한 명이 1년간 삼키게 되는 세제의 양<span class="sub">(소주잔 50ml 기준)</span></p>
-      <p class="src">출처: 충남대학교 환경공학과 서동일 교수 연구</p>
-    </div>
+    <div class="infog" role="group" aria-label="아이 한 명이 1년간 삼키게 되는 세제의 양 인포그래픽">
+          <p class="infog-heading">매일 쓰는 식판에 남은 세제,<br>1년 동안 쌓이면</p>
+          <div class="infog-flow">
+            <div class="infog-step">
+              <div class="infog-art">
+                <svg viewBox="0 0 136 128" aria-hidden="true" focusable="false">
+                  <path d="M13 69C8 38 30 18 65 19c36 1 65 23 61 53-3 25-25 40-58 39-34 0-51-16-55-42Z" fill="#E4F3FD"/>
+                  <g transform="rotate(-7 65 72)" stroke="#406889" stroke-width="1.8" stroke-linejoin="round">
+                    <rect x="15" y="44" width="100" height="69" rx="15" fill="#D0E8F7"/>
+                    <rect x="20" y="47" width="90" height="61" rx="11" fill="#F8FCFF"/>
+                    <rect x="26" y="53" width="22" height="18" rx="5" fill="#E4F3FD" stroke="#A1C9E2"/>
+                    <rect x="54" y="53" width="22" height="18" rx="5" fill="#E4F3FD" stroke="#A1C9E2"/>
+                    <rect x="82" y="53" width="22" height="18" rx="5" fill="#E4F3FD" stroke="#A1C9E2"/>
+                    <rect x="26" y="77" width="34" height="25" rx="7" fill="#E4F3FD" stroke="#A1C9E2"/>
+                    <rect x="66" y="77" width="38" height="25" rx="7" fill="#E4F3FD" stroke="#A1C9E2"/>
+                  </g>
+                  <path d="M70 12s-9 10-9 16a9 9 0 0 0 18 0c0-6-9-16-9-16Z" fill="#4FB3EE"/>
+                  <path d="M67 27c-1 3 0 5 3 6" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M90 23s-5 6-5 10a5 5 0 0 0 10 0c0-4-5-10-5-10Z" fill="#91CFF3"/>
+                </svg>
+              </div>
+              <p class="infog-step-label">하루 <strong>3끼</strong></p>
+              <p class="infog-step-note">식판에 남은 세제</p>
+            </div>
+            <span class="infog-operator" aria-hidden="true">×</span>
+            <div class="infog-step">
+              <div class="infog-art infog-calendar">
+                <svg viewBox="0 0 136 128" aria-hidden="true" focusable="false">
+                  <path d="M13 72C6 43 29 17 62 17c33 0 61 17 63 48 3 33-21 47-58 47-30 0-49-15-54-40Z" fill="#DFF6F0"/>
+                  <path d="M27 40h85v69a7 7 0 0 1-7 7H34a7 7 0 0 1-7-7Z" fill="#C7E8DF" stroke="#406889" stroke-width="1.8"/>
+                  <rect x="23" y="30" width="85" height="81" rx="8" fill="#FFF" stroke="#406889" stroke-width="1.8"/>
+                  <path d="M23 49V38a8 8 0 0 1 8-8h69a8 8 0 0 1 8 8v11Z" fill="#B4E8DC"/>
+                  <path d="M23 49h85M44 23v14m43-14v14" fill="none" stroke="#406889" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M38 97h13m8 0h13m8 0h13" fill="none" stroke="#CFE3D7" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <span class="infog-calendar-number" aria-hidden="true">365</span>
+              </div>
+              <p class="infog-step-label"><strong>365</strong>일</p>
+              <p class="infog-step-note">매일, 1년 동안</p>
+            </div>
+            <span class="infog-operator" aria-hidden="true">=</span>
+            <div class="infog-step">
+              <div class="infog-art">
+                <svg viewBox="0 0 136 128" aria-hidden="true" focusable="false">
+                  <path d="M8 72C5 37 31 15 65 16c38 1 65 27 62 58-3 29-30 39-64 37C30 108 11 98 8 72Z" fill="#FFF4CC"/>
+                  <g stroke="#406889" stroke-width="1.8" stroke-linejoin="round">
+                    <path d="m15 47 6 55c1 8 37 8 38 0l6-55Z" fill="#FFF"/>
+                    <path d="m19 65 5 36c1 5 31 5 32 0l5-36Z" fill="#FFD24D" stroke="none"/>
+                    <ellipse cx="40" cy="65" rx="21" ry="5" fill="#FFE89E" stroke="none"/>
+                    <ellipse cx="40" cy="47" rx="25" ry="6" fill="#FFF"/>
+                    <path d="m26 72 3 24" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+                    <path d="m73 39 6 55c1 8 37 8 38 0l6-55Z" fill="#FFF"/>
+                    <path d="m77 57 5 36c1 5 31 5 32 0l5-36Z" fill="#FFD24D" stroke="none"/>
+                    <ellipse cx="98" cy="57" rx="21" ry="5" fill="#FFE89E" stroke="none"/>
+                    <ellipse cx="98" cy="39" rx="25" ry="6" fill="#FFF"/>
+                    <path d="m84 64 3 24" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+                  </g>
+                </svg>
+              </div>
+              <p class="infog-step-label">소주잔 <strong>2컵</strong></p>
+              <p class="infog-step-note">한 컵 50ml 기준</p>
+            </div>
+          </div>
+          <div class="infog-summary">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3S6 10 6 14a6 6 0 0 0 12 0c0-4-6-11-6-11Z" fill="#4FB3EE"/><path d="M9 14a3 3 0 0 0 3 3" fill="none" stroke="#FFF" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <p>아이 한 명이 1년 동안<br><strong>삼키게 되는 세제의 양</strong></p>
+          </div>
+          <p class="src">출처: 충남대학교 환경공학과 서동일 교수 연구</p>
+        </div>
   </div>
 </section>
 
