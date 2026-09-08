@@ -242,13 +242,22 @@ HOME = f'''
         <span class="chip chip-yellow"><span class="dot"></span>매일 진공 포장 배송</span>
       </div>
     </div>
-    <div class="hero-photo">
-      <img src="assets/img/kid-portrait.jpg" alt="진공 포장된 THE 좋은식판 식판을 들고 웃는 아이" width="630" height="788">
+    <div class="hero-photo" id="heroPhoto">
+      <div class="hm-box" id="hmBox">
+        <div class="hm" id="hm" tabindex="0" role="button" aria-label="세척 공정 영상 크게 보기">
+          <video id="heroVid" muted loop playsinline preload="metadata" poster="assets/img/hero-poster.jpg" aria-hidden="true">
+            <source src="assets/hero.mp4" type="video/mp4">
+          </video>
+          <div class="hm-hint">마우스를 올리면 크게 보입니다</div>
+          <button class="hm-close" id="hmClose" type="button" aria-label="영상 닫기">닫기 ✕</button>
+        </div>
+      </div>
       <div class="float-badge b2"><span class="ic">{I_SHIELD}</span>6단계 살균 세척</div>
-      <div class="float-badge b1"><span class="ic">{I_DROP}</span>세제 잔류 없이 진공 포장 도착</div>
+      <div class="float-badge b1"><span class="ic">{I_DROP}</span>세척 공장을 영상으로</div>
     </div>
   </div>
 </section>
+<script src="assets/js/hero-media.js" defer></script>
 
 <div class="cycle-b" aria-label="하루의 순환">
   <div class="wrap">
