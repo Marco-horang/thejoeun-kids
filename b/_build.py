@@ -229,7 +229,7 @@ HOME = f'''
   <div class="wrap">
     <div>
       <span class="chip chip-sky"><span class="dot"></span>어린이집·유치원 식판 살균 세척 · 진공 포장 배송</span>
-      <h1>아이가 매일 쓰는 식판,<br>세제 한 방울도 남기지 않습니다.</h1>
+      <h1>아이가 매일 쓰는 식판,<br>세제 한 방울도<br>남기지 않습니다.</h1>
       <p class="lead">어린이집 식판을 매일 가져와 80℃ 고온수부터 120℃ 살균 건조까지 6단계 살균 세척을 거친 뒤, 진공 포장해 원으로 다시 보내드립니다.</p>
       <div class="hero-btns">
         <a class="btn btn-fill btn-lg" href="contact.html">우리 아이 식판 신청</a>
@@ -397,9 +397,9 @@ HOME = f'''
       <p>아래 문구는 자리 잡기용 예시입니다. 실제 학부모·원장님 후기로 교체합니다.</p>
     </div>
     <div class="reviews">
-      <div class="review"><span class="sample">예시 문구</span><div class="q">“</div><p>아이 식판을 매일 진공 포장으로 받으니 집에서 씻어 보낼 때보다 훨씬 마음이 놓여요. 검사 결과지도 원에서 보여주셨어요.</p><div class="who">5세 아이 학부모 (예시)</div></div>
-      <div class="review"><span class="sample">예시 문구</span><div class="q">“</div><p>급식 후 설거지와 소독에 쓰던 시간이 통째로 사라졌습니다. 선생님들이 아이들에게 더 집중할 수 있게 됐어요.</p><div class="who">어린이집 원장 (예시)</div></div>
-      <div class="review"><span class="sample">예시 문구</span><div class="q">“</div><p>학부모 상담 때 위생검사 결과지를 그대로 보여드릴 수 있어서 설명이 쉬워졌습니다.</p><div class="who">유치원 교사 (예시)</div></div>
+      <div class="review"><span class="sample">예시 문구</span><div class="q">“</div><p>아이 식판을 매일 진공 포장으로 받으니 집에서 씻어 보낼 때보다 훨씬 마음이 놓여요. 검사 결과지도 원에서 보여주셨어요.</p><div class="by">5세 아이 학부모 (예시)</div></div>
+      <div class="review"><span class="sample">예시 문구</span><div class="q">“</div><p>급식 후 설거지와 소독에 쓰던 시간이 통째로 사라졌습니다. 선생님들이 아이들에게 더 집중할 수 있게 됐어요.</p><div class="by">어린이집 원장 (예시)</div></div>
+      <div class="review"><span class="sample">예시 문구</span><div class="q">“</div><p>학부모 상담 때 위생검사 결과지를 그대로 보여드릴 수 있어서 설명이 쉬워졌습니다.</p><div class="by">유치원 교사 (예시)</div></div>
     </div>
   </div>
 </section>

@@ -12,6 +12,16 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* B안: 데스크톱 고정 CTA는 첫 화면을 지나면 표시 (모바일은 항상) */
+  var sticky = document.querySelector('.sticky-cta');
+  function onStickyScroll() {
+    if (!sticky) return;
+    if (window.scrollY > 520) sticky.classList.add('show');
+    else sticky.classList.remove('show');
+  }
+  window.addEventListener('scroll', onStickyScroll, { passive: true });
+  onStickyScroll();
+
   /* 모바일 메뉴 */
   var toggle = document.getElementById('navToggle');
   var panel = document.getElementById('mnav');
