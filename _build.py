@@ -19,7 +19,7 @@ FAX = "0504-273-5443"
 ADDR = "경기도 광명시 일직로99번안길 20, 1층"
 MAP = "https://map.naver.com/p/search/%EA%B4%91%EB%AA%85%EC%8B%9C%20%EC%9D%BC%EC%A7%81%EB%A1%9C99%EB%B2%88%EC%95%88%EA%B8%B8%2020"
 # 오시는 길 = 본사 사무실(기업부설연구소 소재지, 회사정보 정본 2026-07-03 확인). 등기상 본사(광명)는 푸터·회사 페이지에 유지
-OFFICE_ADDR = "경기도 화성시 동탄첨단산업1로 27, 비동 비1728호 (영천동)"
+OFFICE_ADDR = "경기도 화성시 동탄첨단산업1로 27, B동 1728호 (영천동)"
 OFFICE_MAP = "https://map.naver.com/p/search/" + "%ED%99%94%EC%84%B1%EC%8B%9C%20%EB%8F%99%ED%83%84%EC%B2%A8%EB%8B%A8%EC%82%B0%EC%97%851%EB%A1%9C%2027"
 APPLY_URL = ""   # 학부모 신청 웹앱 공개 주소가 확정되면 여기에 넣는다 (비어 있으면 '준비 중' 표시)
 YEAR = "2026"
@@ -677,7 +677,7 @@ CONTACT = f'''
     </div>
     <div class="info-grid">
       <div class="info"><h3>본사 사무실</h3><p>{OFFICE_ADDR}</p><a class="btn btn-line btn-sm" href="{OFFICE_MAP}" target="_blank" rel="noopener">네이버 지도에서 보기</a></div>
-      <div class="notice"><b>상담 전에 준비해 주시면 빠릅니다</b><br>원 이름과 지역, 대략의 원아 수, 급식·간식 시간. 이 세 가지면 하루 안에 구성과 일정을 안내해 드릴 수 있습니다.</div>
+      <div class="notice"><b>상담 전에 준비해 주시면 빠릅니다</b><br>원 이름과 지역, 대략의 원아 수, 급식·간식 시간.<br>이 세 가지면 하루 안에 구성과 일정을 안내해 드릴 수 있습니다.</div>
     </div>
   </div>
 </section>
