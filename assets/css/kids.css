@@ -196,6 +196,7 @@ section{padding:var(--sec) 0}
 .stat-card .num{font-family:var(--f-display);font-size:clamp(64px,8vw,104px);line-height:.95;color:var(--navy);letter-spacing:-.03em}
 .stat-card .num small{font-size:.32em;color:var(--ink-2);margin-left:10px;letter-spacing:-.01em}
 .stat-card .desc{margin-top:16px;font-size:17px;color:var(--ink)}
+.stat-card .desc .sub,.infog .cap .sub{display:block;margin-top:4px;font-size:14px;color:var(--ink-3)}
 .stat-card .src{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink-3)}
 
 /* ---------- 6단계 공정 (실제 순서이므로 번호 사용) ---------- */

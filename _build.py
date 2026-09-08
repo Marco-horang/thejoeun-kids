@@ -286,7 +286,7 @@ HOME = f'''
     </div>
     <div class="stat-card">
       <div class="num">2컵<small>한 해 동안</small></div>
-      <p class="desc">아이 한 명이 1년간 삼키게 되는 세제의 양 (소주잔 50ml 기준)</p>
+      <p class="desc">아이 한 명이 1년간 삼키게 되는 세제의 양<span class="sub">(소주잔 50ml 기준)</span></p>
       <p class="src">출처: 충남대학교 환경공학과 서동일 교수 연구</p>
     </div>
   </div>
