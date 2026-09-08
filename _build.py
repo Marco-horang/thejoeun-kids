@@ -23,6 +23,7 @@ OFFICE_ADDR = "경기도 화성시 동탄첨단산업1로 27, B동 1728호 (영�
 OFFICE_MAP = "https://map.naver.com/p/search/" + "%ED%99%94%EC%84%B1%EC%8B%9C%20%EB%8F%99%ED%83%84%EC%B2%A8%EB%8B%A8%EC%82%B0%EC%97%851%EB%A1%9C%2027"
 APPLY_URL = ""   # 학부모 신청 웹앱 공개 주소가 확정되면 여기에 넣는다 (비어 있으면 '준비 중' 표시)
 YEAR = "2026"
+BUILD_VER = datetime.datetime.now().strftime("%Y%m%d%H%M")   # 캐시 무효화용 버전 표식
 
 # ---------- 아이콘 ----------
 I_CHAT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 4C7 4 3 7.2 3 11c0 2.4 1.6 4.5 4 5.7L6 21l4.3-2.4c.6.1 1.1.1 1.7.1 5 0 9-3.2 9-7s-4-7-9-7z"/></svg>'
@@ -155,7 +156,7 @@ def shell(fname, title, desc, body, has_hero=False, extra_ld=None):
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/css/kids.css">
+<link rel="stylesheet" href="assets/css/kids.css?v={BUILD_VER}">
 {ld}
 </head>
 <body{body_cls}>
@@ -165,7 +166,7 @@ def shell(fname, title, desc, body, has_hero=False, extra_ld=None):
 {body}
 </main>
 {FOOTER}
-<script src="assets/js/kids.js"></script>
+<script src="assets/js/kids.js?v={BUILD_VER}"></script>
 </body>
 </html>
 '''
