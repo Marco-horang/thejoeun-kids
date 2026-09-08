@@ -87,11 +87,11 @@ p{color:var(--ink-2)}
 .on-dark .btn-line:hover{background:rgba(255,255,255,.12);border-color:#fff}
 
 /* ---------- 헤더 ---------- */
-.site-header{position:fixed;top:0;left:0;right:0;z-index:60;height:76px;
+.site-header{position:fixed;top:0;left:0;right:0;z-index:60;height:80px;
   background:var(--canvas);border-bottom:1px solid var(--line);
   transition:background .3s var(--ease),border-color .3s var(--ease)}
 .site-header .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:block;height:34px}
+.brand{display:block;height:46px}
 .brand img{height:100%;width:auto}
 .brand .lg-white{display:none}
 .nav{display:flex;align-items:center;gap:6px}
@@ -124,7 +124,7 @@ body.has-hero .site-header:not(.scrolled) .nav-toggle span::before,
 body.has-hero .site-header:not(.scrolled) .nav-toggle span::after{background:#fff}
 
 /* 모바일 메뉴 패널 */
-.mnav{display:none;position:fixed;top:76px;left:0;right:0;bottom:0;z-index:55;
+.mnav{display:none;position:fixed;top:80px;left:0;right:0;bottom:0;z-index:55;
   background:var(--canvas);padding:16px var(--gutter) 32px;overflow:auto}
 .mnav.open{display:block}
 .mnav a.item{display:block;padding:16px 4px;font-size:20px;font-family:var(--f-display);color:var(--navy);
@@ -138,7 +138,7 @@ body.menu-open .site-header .brand .lg-color{display:block!important}
 body.menu-open .nav-toggle span::before,body.menu-open .nav-toggle span::after{background:var(--navy)!important}
 
 /* ---------- 페이지 상단 (히어로 없는 페이지) ---------- */
-.page-head{padding:calc(76px + clamp(56px,8vw,96px)) 0 clamp(40px,5vw,64px)}
+.page-head{padding:calc(80px + clamp(56px,8vw,96px)) 0 clamp(40px,5vw,64px)}
 .page-head h1{max-width:16em}
 .page-head .lead{max-width:34em;margin-top:18px}
 
@@ -323,7 +323,7 @@ ul.check li::after{content:"";position:absolute;left:6px;top:9px;width:6px;heigh
 /* ---------- 푸터 ---------- */
 .site-footer{background:var(--navy);color:rgba(255,255,255,.72);padding:64px 0 36px;font-size:14.5px}
 .ft-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.14)}
-.ft-brand img{height:40px;width:auto;margin-bottom:18px}
+.ft-brand img{height:52px;width:auto;margin-bottom:18px}
 .ft-brand p{color:rgba(255,255,255,.72);font-size:14.5px;line-height:1.7}
 .site-footer h5{color:#fff;font-size:14px;margin-bottom:14px}
 .site-footer li{margin-bottom:9px}
@@ -364,10 +364,10 @@ ul.check li::after{content:"";position:absolute;left:6px;top:9px;width:6px;heigh
   body{font-size:16px}
   .steps,.eco-grid,.area-grid{grid-template-columns:1fr}
   .hero-btns .btn,.cta-btns .btn{width:100%}
-  .site-header{height:66px}
-  .mnav{top:66px}
-  .brand{height:28px}
-  .page-head{padding-top:calc(66px + 48px)}
+  .site-header{height:70px}
+  .mnav{top:70px}
+  .brand{height:36px}
+  .page-head{padding-top:calc(70px + 48px)}
   .stat-card{padding:28px 24px 22px}
   .sheet{padding:22px 20px 18px}
 }
