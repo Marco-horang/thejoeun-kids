@@ -370,7 +370,7 @@ HOME = f'''
       </video>
       <div class="txt">
         <span class="cond">2분 48초</span>
-        <h3 class="mt-16">세척 공장을 영상으로 보여드립니다</h3>
+        <h3 class="mt-16">세척 공정을 영상으로 보여드립니다</h3>
         <p>회수된 식판이 6단계 공정을 거쳐 진공 포장되기까지, 편집 없이 전 과정을 담았습니다.</p>
       </div>
     </div>
