@@ -19,13 +19,17 @@
     hm.style.top = r.top + 'px'; hm.style.left = r.left + 'px';
     hm.style.width = r.width + 'px'; hm.style.height = r.height + 'px';
   }
+  /* 확장 시 body 바로 아래로 옮겨(포털) 헤더·고정 버튼의 쌓임 맥락 위로 올린다 */
   function open() {
     if (busy || hm.classList.contains('full')) return;
     busy = true;
-    setRect(hm.getBoundingClientRect());
+    var r = hm.getBoundingClientRect();
     hm.classList.add('fixed');
+    setRect(r);
+    document.body.appendChild(hm);
     wrap.classList.add('expanded');
     document.body.classList.add('hm-open');
+    var wasPlaying = !vid.paused;
     vid.play().catch(function () {});
     requestAnimationFrame(function () { requestAnimationFrame(function () {
       hm.classList.add('full');
@@ -40,6 +44,7 @@
     setTimeout(function () {
       hm.classList.remove('fixed');
       hm.style.top = hm.style.left = hm.style.width = hm.style.height = '';
+      box.appendChild(hm);
       wrap.classList.remove('expanded');
       document.body.classList.remove('hm-open');
       if (!canHover) vid.pause();
