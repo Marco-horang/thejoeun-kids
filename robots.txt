@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /
+Allow: /
+Sitemap: https://www.xn--the-vq6no9oz5bx06a.com/sitemap.xml
