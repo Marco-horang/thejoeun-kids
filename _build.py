@@ -76,7 +76,7 @@ FOOTER = f'''
     <div class="ft-grid">
       <div class="ft-brand">
         <img src="assets/logo/logo-h-white.png" alt="THE 좋은식판" width="1200" height="421">
-        <p>어린이집·유치원 식기를 매일 살균 세척해<br>진공 포장으로 배송하는 영유아 식기 케어 서비스입니다.</p>
+        <p>어린이집·유치원 식기를 매일 살균 세척해<br>수축 포장으로 배송하는 영유아 식기 케어 서비스입니다.</p>
       </div>
       <div>
         <h5>서비스</h5>
@@ -116,7 +116,7 @@ LD_BUSINESS = json.dumps({
     "@type": "LocalBusiness",
     "name": "THE 좋은식판",
     "legalName": "주식회사 더좋은",
-    "description": "어린이집·유치원 식기를 매일 살균 세척해 진공 포장으로 배송하는 영유아 식기 케어 서비스",
+    "description": "어린이집·유치원 식기를 매일 살균 세척해 수축 포장으로 배송하는 영유아 식기 케어 서비스",
     "url": SITE + "/",
     "telephone": "+82-1668-5243",
     "email": EMAIL,
@@ -178,7 +178,7 @@ STEPS = [
     ("03", "초음파 버블 세척", "손이 닿지 않는 미세한 틈까지 초음파 버블로 씻어냅니다.", "미세 오염 제거"),
     ("04", "고온·고압 헹굼", "대형 세척기에서 3차에 걸친 고온 고압 헹굼을 추가로 진행합니다.", "3차 헹굼"),
     ("05", "고온 살균 건조", "120℃ 이상 고온 건조로 식중독균까지 사멸시킵니다.", "120℃ 이상"),
-    ("06", "위생 점검·진공 포장", "고온 살균과 전수 위생 점검을 마친 식기를 진공 포장해 당일 배송합니다.", "당일 배송"),
+    ("06", "위생 점검·수축 포장", "고온 살균과 전수 위생 점검을 마친 식기를 수축 포장해 당일 배송합니다.", "당일 배송"),
 ]
 
 def steps_block():
@@ -212,7 +212,7 @@ def cta_block(title, sub, primary=("우리 아이 식판 신청", "contact.html"
       </div>
       {hint_html}
     </div>
-    <div class="cta-photo"><img src="assets/img/kid.jpg" alt="진공 포장된 THE 좋은식판 식판을 들고 웃는 아이" width="1400" height="788"></div>
+    <div class="cta-photo"><img src="assets/img/kid.jpg" alt="수축 포장된 THE 좋은식판 식판을 들고 웃는 아이" width="1400" height="788"></div>
   </div>
 </section>'''
 
@@ -227,9 +227,9 @@ HOME = f'''
     <div class="hero-scrim"></div>
   </div>
   <div class="wrap hero-inner">
-    <p class="kicker">어린이집·유치원 식판 살균 세척 · 진공 포장 배송</p>
+    <p class="kicker">어린이집·유치원 식판 살균 세척 · 수축 포장 배송</p>
     <h1>아이가 매일 쓰는 식판,<br>세제 한 방울도 남기지 않습니다.</h1>
-    <p class="lead">어린이집 식판을 매일 가져와 80℃ 고온수부터 120℃ 살균 건조까지 6단계 살균 세척을 거친 뒤, 진공 포장해 원으로 다시 보내드립니다.</p>
+    <p class="lead">어린이집 식판을 매일 가져와 80℃ 고온수부터 120℃ 살균 건조까지 6단계 살균 세척을 거친 뒤, 수축 포장해 원으로 다시 보내드립니다.</p>
     <div class="hero-btns on-dark">
       <a class="btn btn-fill btn-lg" href="contact.html">우리 아이 식판 신청</a>
       <a class="btn btn-line btn-lg" href="partnership.html">원 도입 상담</a>
@@ -238,8 +238,8 @@ HOME = f'''
   <div class="cycle" aria-label="하루의 순환">
     <div class="wrap">
       <div class="cycle-item"><div class="when">회수</div><b>사용한 식기를 원에서 가져옵니다</b><span>설거지도, 보관도 원에서 하실 일이 없습니다</span></div>
-      <div class="cycle-item"><div class="when">세척</div><b>6단계 살균 세척 후 진공 포장</b><span>고온수 · 초음파 · 고압 헹굼 · 120℃ 건조</span></div>
-      <div class="cycle-item"><div class="when">배송</div><b>매일 진공 포장 식기 배송</b><span>포장을 뜯어 바로 식탁에 올리면 됩니다</span></div>
+      <div class="cycle-item"><div class="when">세척</div><b>6단계 살균 세척 후 수축 포장</b><span>고온수 · 초음파 · 고압 헹굼 · 120℃ 건조</span></div>
+      <div class="cycle-item"><div class="when">배송</div><b>매일 수축 포장 식기 배송</b><span>포장을 뜯어 바로 식탁에 올리면 됩니다</span></div>
     </div>
   </div>
 </div>
@@ -254,7 +254,7 @@ HOME = f'''
       <div class="who">
         <span class="tag">학부모님께</span>
         <h3>원이 도입한 뒤, 우리 아이 몫만 신청하고 결제해요</h3>
-        <p>원에서 THE 좋은식판을 도입했다면 아이가 다니는 원을 검색해 신청하면 됩니다. 우리 아이 몫의 식기가 매일 진공 포장으로 원에 도착합니다.</p>
+        <p>원에서 THE 좋은식판을 도입했다면 아이가 다니는 원을 검색해 신청하면 됩니다. 우리 아이 몫의 식기가 매일 수축 포장으로 원에 도착합니다.</p>
         <ul>
           <li>원 이름 검색 후 3분이면 신청 완료</li>
           <li>키즈노트 스마트주문으로도 신청 가능</li>
@@ -265,7 +265,7 @@ HOME = f'''
       <div class="who">
         <span class="tag">선생님 · 원장님께</span>
         <h3>설거지와 소독, 보관 부담을 통째로 덜어드립니다</h3>
-        <p>식기는 저희가 준비하고, 살균 세척과 진공 포장, 매일 배송까지 맡습니다. 도입을 정하시면 학부모님 안내와 개별 신청 접수까지 함께 합니다.</p>
+        <p>식기는 저희가 준비하고, 살균 세척과 수축 포장, 매일 배송까지 맡습니다. 도입을 정하시면 학부모님 안내와 개별 신청 접수까지 함께 합니다.</p>
         <ul>
           <li>급식 후 설거지·소독·건조 업무 해소</li>
           <li>정기 위생검사 결과지 제공</li>
@@ -370,7 +370,7 @@ HOME = f'''
       <div class="txt">
         <span class="cond">2분 48초</span>
         <h3 class="mt-16">세척 공정을 영상으로 보여드립니다</h3>
-        <p>회수된 식판이 6단계 공정을 거쳐 진공 포장되기까지, 편집 없이 전 과정을 담았습니다.</p>
+        <p>회수된 식판이 6단계 공정을 거쳐 수축 포장되기까지, 편집 없이 전 과정을 담았습니다.</p>
       </div>
     </div>
   </div>
@@ -427,8 +427,8 @@ SERVICE = f'''
     </div>
     <div class="how">
       <div class="how-item"><span class="k">1. 회수</span><h3>사용한 식기를 원에서 가져옵니다</h3><p>급식 후 남은 식기는 전용 박스에 담아 두시면 됩니다. 설거지도, 헹굼도, 보관도 필요 없습니다.</p></div>
-      <div class="how-item"><span class="k">2. 세척 · 포장</span><h3>6단계 살균 세척 후 진공 포장</h3><p>80℃ 고온수 세척부터 120℃ 살균 건조까지 거친 뒤 전수 위생 점검을 하고 진공 포장합니다.</p></div>
-      <div class="how-item"><span class="k">3. 배송</span><h3>매일 진공 포장 식기 배송</h3><p>진공 포장된 식기가 매일 원에 도착합니다. 포장을 뜯는 순간까지 살균 상태가 유지됩니다.</p></div>
+      <div class="how-item"><span class="k">2. 세척 · 포장</span><h3>6단계 살균 세척 후 수축 포장</h3><p>80℃ 고온수 세척부터 120℃ 살균 건조까지 거친 뒤 전수 위생 점검을 하고 수축 포장합니다.</p></div>
+      <div class="how-item"><span class="k">3. 배송</span><h3>매일 수축 포장 식기 배송</h3><p>수축 포장된 식기가 매일 원에 도착합니다. 포장을 뜯는 순간까지 살균 상태가 유지됩니다.</p></div>
     </div>
   </div>
 </section>
@@ -447,10 +447,10 @@ SERVICE = f'''
   <div class="wrap">
     <div class="sec-head">
       <h2>아이 한 명에게 가는 한 세트</h2>
-      <p>아이가 한 끼에 쓰는 식기를 한 세트로 묶어 진공 포장합니다.</p>
+      <p>아이가 한 끼에 쓰는 식기를 한 세트로 묶어 수축 포장합니다.</p>
     </div>
     <div class="set-grid">
-      <div class="photo"><img src="assets/img/vacuum-pack.jpg" alt="THE 좋은식판 로고가 보이는 진공 포장 식판" width="1400" height="788" loading="lazy"></div>
+      <div class="photo"><img src="assets/img/vacuum-pack.jpg" alt="THE 좋은식판 로고가 보이는 수축 포장 식판" width="1400" height="788" loading="lazy"></div>
       <div class="items">
         <div class="step"><h3>식판</h3><p>스테인리스 유아용 식판입니다. 코팅이 벗겨질 걱정 없이 고온 살균이 가능합니다.</p></div>
         <div class="step"><h3>수저 · 포크</h3><p>아이 손에 맞는 크기의 수저와 포크를 식판과 함께 포장합니다.</p></div>
@@ -472,7 +472,7 @@ SERVICE = f'''
       <div class="vs-row"><div>세척 온도</div><div>손이 견디는 온도의 물</div><div>80℃ 이상 고온수</div></div>
       <div class="vs-row"><div>세제와 헹굼</div><div>세제로 씻고 손으로 헹굼</div><div>초음파 버블 세척과 3차 고온 고압 헹굼</div></div>
       <div class="vs-row"><div>건조와 살균</div><div>자연 건조 또는 행주</div><div>120℃ 이상 고온 살균 건조</div></div>
-      <div class="vs-row"><div>보관</div><div>가방이나 원 선반에 보관</div><div>진공 포장 상태로 매일 도착</div></div>
+      <div class="vs-row"><div>보관</div><div>가방이나 원 선반에 보관</div><div>수축 포장 상태로 매일 도착</div></div>
       <div class="vs-row"><div>확인 방법</div><div>눈으로 보는 것 외에 없음</div><div>정기 위생검사 결과지</div></div>
     </div>
   </div>
@@ -583,7 +583,7 @@ PARTNER = f'''
     <div class="who-grid">
       <div class="who">
         <h3>식기 관리 업무가 원에서 사라집니다</h3>
-        <p>식기는 저희가 준비합니다. 회수, 살균 세척, 진공 포장, 매일 배송까지 한 번에 맡습니다.</p>
+        <p>식기는 저희가 준비합니다. 회수, 살균 세척, 수축 포장, 매일 배송까지 한 번에 맡습니다.</p>
         <ul>
           <li>급식 후 설거지·소독·건조 업무 해소</li>
           <li>식기 보관 공간과 소독기 관리 부담 해소</li>
@@ -623,7 +623,7 @@ PARTNER = f'''
     <div class="how">
       <div class="how-item"><span class="k">1. 상담</span><h3>원 규모와 급식 방식 확인</h3><p>원아 수, 급식·간식 시간, 식기 구성을 함께 정합니다. 전화나 카카오톡으로 시작하시면 됩니다.</p></div>
       <div class="how-item"><span class="k">2. 준비</span><h3>배송 일정과 식기 세트 준비</h3><p>배송 시간과 회수 방식을 원 일정에 맞춰 정하고, 아이 수만큼 식기 세트를 준비합니다.</p></div>
-      <div class="how-item"><span class="k">3. 첫 배송</span><h3>매일 진공 포장 식기 도착</h3><p>첫날부터 진공 포장된 식기가 원에 도착합니다. 이후로는 매일 정해진 시간에 반복됩니다.</p></div>
+      <div class="how-item"><span class="k">3. 첫 배송</span><h3>매일 수축 포장 식기 도착</h3><p>첫날부터 수축 포장된 식기가 원에 도착합니다. 이후로는 매일 정해진 시간에 반복됩니다.</p></div>
     </div>
   </div>
 </section>
@@ -670,9 +670,9 @@ ABOUT = f'''
   <div class="wrap prose">
     <h2>왜 시작했나</h2>
     <p class="mt-16">면역력이 낮은 아이들에게 식기 위생은 식단만큼 중요합니다. 그런데 원에서 매일 수십 장의 식판을 손으로 씻고 소독하는 일은 선생님들에게 큰 부담이고, 세제가 완전히 씻겼는지는 눈으로 확인할 수 없습니다.</p>
-    <p>그래서 식기 관리를 원 밖으로 가져왔습니다. 전용 세척 공장에서 80℃ 고온수, 초음파, 고압 헹굼, 120℃ 살균 건조를 거쳐 진공 포장한 식기를 매일 원으로 배송합니다. 더 이상 아이들의 위생을 걱정하지 않는 세상이 저희의 목표입니다.</p>
+    <p>그래서 식기 관리를 원 밖으로 가져왔습니다. 전용 세척 공장에서 80℃ 고온수, 초음파, 고압 헹굼, 120℃ 살균 건조를 거쳐 수축 포장한 식기를 매일 원으로 배송합니다. 더 이상 아이들의 위생을 걱정하지 않는 세상이 저희의 목표입니다.</p>
     <h3>하는 일</h3>
-    <p>어린이집과 유치원의 식판, 수저·포크, 간식기를 회수해 살균 세척하고 진공 포장해 배송합니다. 정기 위생검사를 시행해 결과지를 원에 전달하고, 세척 상황을 분석해 분사량을 제어하는 AI 식기세척 장치를 직접 연구·개발합니다.</p>
+    <p>어린이집과 유치원의 식판, 수저·포크, 간식기를 회수해 살균 세척하고 수축 포장해 배송합니다. 정기 위생검사를 시행해 결과지를 원에 전달하고, 세척 상황을 분석해 분사량을 제어하는 AI 식기세척 장치를 직접 연구·개발합니다.</p>
   </div>
 </section>
 
@@ -758,10 +758,10 @@ CONTACT = f'''
 '''
 
 PAGES = [
-    ("index.html", "THE 좋은식판 | 어린이집·유치원 식기 살균 세척 · 진공 포장 배송",
-     "아이가 매일 쓰는 식판, 세제 한 방울도 남기지 않습니다. 6단계 살균 세척을 거쳐 진공 포장한 식기를 매일 어린이집·유치원으로 배송하는 영유아 식기 케어 서비스.", HOME, True),
+    ("index.html", "THE 좋은식판 | 어린이집·유치원 식기 살균 세척 · 수축 포장 배송",
+     "아이가 매일 쓰는 식판, 세제 한 방울도 남기지 않습니다. 6단계 살균 세척을 거쳐 수축 포장한 식기를 매일 어린이집·유치원으로 배송하는 영유아 식기 케어 서비스.", HOME, True),
     ("service.html", "서비스 소개 | THE 좋은식판",
-     "회수, 6단계 살균 세척, 진공 포장, 매일 배송까지. 어린이집·유치원 식기 관리의 전 과정을 THE 좋은식판이 맡습니다.", SERVICE, False),
+     "회수, 6단계 살균 세척, 수축 포장, 매일 배송까지. 어린이집·유치원 식기 관리의 전 과정을 THE 좋은식판이 맡습니다.", SERVICE, False),
     ("report.html", "안심 위생 리포트 | THE 좋은식판",
      "교육·보육기관 안전 기준에 맞춘 정기 위생검사 결과지를 원에 그대로 전달합니다. 일반세균, 대장균군, 잔류세제, ATP 표면오염도.", REPORT, False),
     ("partnership.html", "교육기관 도입 안내 | THE 좋은식판",
