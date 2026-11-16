@@ -23,6 +23,30 @@ OFFICE_ADDR = "경기도 화성시 동탄첨단산업1로 27, B동 1728호 (영�
 OFFICE_MAP = "https://map.naver.com/p/search/" + "%ED%99%94%EC%84%B1%EC%8B%9C%20%EB%8F%99%ED%83%84%EC%B2%A8%EB%8B%A8%EC%82%B0%EC%97%851%EB%A1%9C%2027"
 APPLY_URL = ""   # 학부모 신청 웹앱 공개 주소가 확정되면 여기에 넣는다 (비어 있으면 '준비 중' 표시)
 YEAR = "2026"
+# 네이버 검색광고 전환 추적(공통키 wa, 광고 계정의 전환 추적 관리에서 발급). 비어 있으면 스크립트를 넣지 않는다.
+NAVER_WA = "s_2657878629b0"
+NAVER_WCS = ""
+def _naver_wcs():
+    if not NAVER_WA:
+        return ""
+    return '''<script src="//wcs.naver.net/wcslog.js"></script>
+<script>
+if (!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "%s";
+if (window.wcs) { wcs.inflow(); wcs_do(); }
+// 전환(상담 신청): 카카오톡 상담·전화·도입 상담 신청 버튼 클릭
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("a[href]");
+  if (!a || !window.wcs) return;
+  var h = a.getAttribute("href") || "", t = (a.textContent || "");
+  var hit = h.indexOf("tel:") === 0 || h.indexOf("pf.kakao.com") > -1 ||
+            (/(^|\\/)contact\\.html/.test(h) && /상담|신청/.test(t)) ||
+            (/(^|\\/)partnership\\.html/.test(h) && /도입 상담/.test(t));
+  if (!hit) return;
+  try { var _conv = {}; _conv.type = "lead"; wcs.trans(_conv); } catch (err) {}
+}, true);
+</script>''' % NAVER_WA
+NAVER_WCS = _naver_wcs()
 BUILD_VER = datetime.datetime.now().strftime("%Y%m%d%H%M")   # 캐시 무효화용 버전 표식
 
 # ---------- 아이콘 ----------
@@ -167,6 +191,7 @@ def shell(fname, title, desc, body, has_hero=False, extra_ld=None):
 </main>
 {FOOTER}
 <script src="assets/js/kids.js?v={BUILD_VER}"></script>
+{NAVER_WCS}
 </body>
 </html>
 '''
