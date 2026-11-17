@@ -152,6 +152,8 @@ LD_BUSINESS = json.dumps({
     "sameAs": [KAKAO],
 }, ensure_ascii=False)
 
+
+
 def shell(fname, title, desc, body, has_hero=False, extra_ld=None):
     canon = f"{SITE}/" if fname == "index.html" else f"{SITE}/{fname}"
     body_cls = ' class="has-hero"' if has_hero else ""
@@ -682,6 +684,121 @@ PARTNER = f'''
 {cta_block("도입 상담을 신청해 주세요", "원 규모만 알려주시면 하루 안에 구성과 일정을 안내해 드립니다.", primary=("도입 상담 신청", "contact.html"), hint=False)}
 '''
 
+# ---------- 신학기 도입 안내 (네이버 검색광고 착지 페이지, 상단 메뉴에는 넣지 않음) ----------
+def tray_svg(n, label):
+    """반찬 칸 n개를 보여 주는 추상 도식 (실물 사진 아님)"""
+    cell_w = (300 - 12 * (n + 1)) / n
+    cells = "".join(
+        f'<rect x="{12 + i * (cell_w + 12):.1f}" y="22" width="{cell_w:.1f}" height="58" rx="10" fill="#E4F3FD" stroke="#A1C9E2" stroke-width="1.6"/>'
+        for i in range(n))
+    return (f'<svg viewBox="0 0 324 104" role="img" aria-label="{label}">'
+            f'<rect x="2" y="2" width="320" height="100" rx="18" fill="#F8FCFF" stroke="#406889" stroke-width="2"/>'
+            f'<g transform="translate(10 4)">{cells}</g></svg>')
+
+START = f'''
+<div class="page-head">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--blue);font-weight:700;margin-bottom:14px">신학기 식판 세척 · 도입 안내</p>
+    <h1>신학기 식판 세척 부담,<br>저희가 덜어 드리겠습니다.</h1>
+    <p class="lead">선생님 · 원장님께. 급식 후 설거지, 소독, 건조, 보관까지 식기 관리 전 과정을 THE 좋은식판이 맡습니다. 3월 신학기를 앞두고 도입 상담을 받고 있습니다.</p>
+    <div class="cta-btns">
+      <a class="btn btn-fill btn-lg" href="contact.html">도입 상담 신청</a>
+      <a class="btn btn-line btn-lg" href="{KAKAO}" target="_blank" rel="noopener">{I_CHAT}카카오톡 상담</a>
+      <a class="btn btn-line btn-lg" href="{TEL_HREF}">{I_TEL}{TEL}</a>
+    </div>
+  </div>
+</div>
+
+<section class="band-white" id="service">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>어떤 서비스인가요</h2>
+      <p>어린이집·유치원 식기를 회수해 6단계로 살균 세척하고, 수축 포장해 원으로 매일 배송합니다. 원에서는 포장을 뜯어 바로 식탁에 올리기만 하면 됩니다.</p>
+    </div>
+    <div class="how">
+      <div class="how-item"><span class="k">1. 회수</span><h3>사용한 식기를 원에서 가져옵니다</h3><p>설거지도, 헹굼도, 보관도 원에서 하실 일이 없습니다.</p></div>
+      <div class="how-item"><span class="k">2. 세척 · 포장</span><h3>6단계 살균 세척 후 수축 포장</h3><p>80℃ 이상 고온수부터 120℃ 이상 살균 건조까지 거친 뒤 전수 위생 점검을 하고 포장합니다.</p></div>
+      <div class="how-item"><span class="k">3. 배송</span><h3>매일 수축 포장 식기 배송</h3><p>수축 포장된 식기가 매일 원에 도착합니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>3찬 · 4찬 식판,<br>원에 맞게 고르세요</h2>
+      <p>급식 방식에 맞는 구성을 선택하실 수 있습니다. 두 구성 모두 세척 공정과 위생검사는 같습니다.</p>
+    </div>
+    <div class="trays">
+      <div class="tray-card">
+        <span class="tag">구성 1</span>
+        <h3>3찬 식판</h3>
+        <p>반찬 세 가지를 담는 구성입니다. 스테인리스 유아용 식판으로, 코팅이 벗겨질 걱정 없이 고온 살균이 가능합니다.</p>
+        <figure class="tray-art">{tray_svg(3, "반찬 칸 3개로 구성된 3찬 식판 도식")}<figcaption>3찬 구성 도식</figcaption></figure>
+      </div>
+      <div class="tray-card">
+        <span class="tag">구성 2</span>
+        <h3>4찬 식판</h3>
+        <p>반찬 네 가지를 담는 구성입니다. 스테인리스 유아용 식판으로, 코팅이 벗겨질 걱정 없이 고온 살균이 가능합니다.</p>
+        <figure class="tray-art">{tray_svg(4, "반찬 칸 4개로 구성된 4찬 식판 도식")}<figcaption>4찬 구성 도식</figcaption></figure>
+      </div>
+    </div>
+    <p class="tray-note">수저·포크는 식판과 함께 포장합니다. 간식기는 기본 포함이 아니라 선택 옵션으로 추가하실 수 있습니다. 식기 구성은 원의 급식 방식에 맞춰 조정할 수 있으니, 상담 때 말씀해 주세요.</p>
+  </div>
+</section>
+
+<section class="band-white" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>도입 절차</h2>
+      <p>원이 도입을 정하면, 학부모님이 아이별로 신청하고 결제합니다. 학부모님 단독 신청은 받지 않습니다.</p>
+    </div>
+    <div class="how how-4">
+      <div class="how-item"><span class="k">1. 원 상담</span><h3>원 규모와 급식 방식 확인</h3><p>원아 수, 급식·간식 시간, 식기 구성을 함께 정합니다. 전화나 카카오톡으로 시작하시면 됩니다.</p></div>
+      <div class="how-item"><span class="k">2. 원 도입 결정</span><h3>선생님 · 원장님이 정합니다</h3><p>3찬·4찬 구성을 포함해 원에 맞는 방식으로 도입을 결정합니다.</p></div>
+      <div class="how-item"><span class="k">3. 학부모 개별 신청·결제</span><h3>우리 아이 몫만 신청</h3><p>원이 도입한 뒤 학부모님이 아이별로 신청하고 결제합니다. 안내도 함께 도와드립니다.</p></div>
+      <div class="how-item"><span class="k">4. 배송 시작</span><h3>매일 수축 포장 식기 도착</h3><p>시작일은 상담에서 원 일정에 맞춰 정합니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band-sky" id="schedule">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>3월 신학기 시작에 맞추려면<br>미리 상담해 주세요</h2>
+      <p>원마다 급식 방식과 공간이 달라 상담에서 먼저 맞춰야 할 것들이 있습니다. 시작일은 원 일정에 맞춰 정하니, 신학기를 앞두고 일찍 상담하실수록 여유 있게 준비하실 수 있습니다.</p>
+    </div>
+    <div class="precheck" style="margin-bottom:0;background:var(--white)">
+      <h3>상담에서 함께 확인합니다</h3>
+      <ul class="check">
+        <li>원아 수와 반 구성</li>
+        <li>급식·간식 시간과 배식 방식</li>
+        <li>식기를 내놓고 받는 위치</li>
+        <li>식기 보관 공간</li>
+        <li>반별·아이별 구분 기준</li>
+        <li>3찬·4찬 식판 구성 선택</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band-white" id="cta">
+  <div class="wrap cta-grid">
+    <div>
+      <h2>도입 상담을 신청해 주세요</h2>
+      <p class="lead mt-16">원 규모만 알려주시면 하루 안에 구성과 일정을 안내해 드립니다.</p>
+      <div class="cta-btns">
+        <a class="btn btn-fill btn-lg" href="contact.html">도입 상담 신청</a>
+        <a class="btn btn-line btn-lg" href="{KAKAO}" target="_blank" rel="noopener">{I_CHAT}카카오톡 상담</a>
+        <a class="btn btn-line btn-lg" href="{TEL_HREF}">{I_TEL}{TEL}</a>
+      </div>
+      <p class="cta-hint">전화는 평일 09:00 – 18:00 연결됩니다.</p>
+    </div>
+    <div class="cta-photo"><img src="assets/img/kid.jpg" alt="수축 포장된 THE 좋은식판 식판을 들고 웃는 아이" width="1400" height="788"></div>
+  </div>
+</section>
+'''
+
 # ---------- 회사 ----------
 ABOUT = f'''
 <div class="page-head">
@@ -795,6 +912,8 @@ PAGES = [
      "2019년 광명에서 시작한 영유아 식기 케어 서비스. ISO 14001·45001 인증, AI 식기세척 장치 특허 2건, 이노비즈·메인비즈·벤처기업 확인.", ABOUT, False),
     ("contact.html", "신청 · 문의 | THE 좋은식판",
      "카카오톡 상담, 전화 1668-5243, 이메일로 서비스 신청과 도입 상담을 받습니다. 평일 09:00–18:00.", CONTACT, False),
+    ("start.html", "신학기 도입 안내 | THE 좋은식판",
+     "어린이집·유치원 선생님·원장님께. 3찬·4찬 식판 중 원에 맞게 고르는 식기 살균 세척·수축 포장 매일 배송 서비스. 3월 신학기를 앞두고 도입 상담을 받습니다.", START, False),
 ]
 
 def main():
