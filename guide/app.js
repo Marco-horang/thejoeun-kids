@@ -55,7 +55,7 @@
   const scrim = document.querySelector('.drawer-scrim');
   const menuButton = document.querySelector('.mobile-menu');
   const langButton = document.getElementById('lang-toggle');
-  const videoUrl = 'https://drive.google.com/file/d/1d4tDgqNsrUc_onDb7PAS-ch6YYOv_-vM/view?usp=sharing';
+  const videoUrl = 'https://youtu.be/tlE0K8xrHPY';
   let lang = pickLang();
   let t = UI[lang];
   let articles, questions;
